@@ -89,6 +89,7 @@ function playagain() {
   l1.classList.remove('scale');
   l2.classList.remove('scale');
   l3.classList.remove('scale');
+  scoreCount = 0;
   score.innerHTML = 0;
   lifeCount = 3;
   setTimeout(() => {
