@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Game</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/6440e9e64a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="homePage" id="home">
+      <h1 class="homeTitle">Color Identify</h1>
+      <button type="button" name="playbtn" class="playbtn" id="playbtn">Let's Play</button>
+    </div>
+    <div class="playPage" id="play">
+      <h1 class="playTitle">Color Identify</h1>
+      <div class="lifeAndScoreBox">
+        <div class="lifesBox">
+          <span class="lifeTitle">Life's</span>
+          <div class="lifesDisplay">
+            <span class="L1" id="l1"><i class="fa-solid fa-heart"></i></span>
+            <span class="L2" id="l2"><i class="fa-solid fa-heart"></i></span>
+            <span class="L3" id="l3"><i class="fa-solid fa-heart"></i></span>
+          </div>
+        </div>
+        <div class="scoresBox">
+          <span class="scoreTitle">Score</span>
+          <div class="scoreDisplay">
+            <span class="score" id="score">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="clickColorAndTimerBox">
+        <div class="clickColorBox">
+          <span class="clickColorTitle">Click the color</span>
+          <span class="clickColor" id="clickColor">Orange</span>
+        </div>
+      </div>
+
+      <div class="primary">
+        <div class="secondary">
+          <div class="secondary-1">
+            <button type="button" name="#776AE3" class="btn1 btn" id="btn1"></button>
+            <button type="button" name="#88E570" class="btn2 btn" id="btn2"></button>
+          </div>
+          <div class="secondary-2">
+            <button type="button" name="#3AB0FF" class="btn3 btn" id="btn3"></button>
+            <button type="button" name="#FFB44A" class="btn4 btn" id="btn4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <h1 class="popupTitle">Game Over</h1>
+    <span class="popupSubTitle">You Scored</span>
+    <span class="popupScore" id="popupScore">0</span>
+    <button type="button" name="button" class="playAgain" id="playAgain">Play Again >></button>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

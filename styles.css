@@ -1,0 +1,256 @@
+body {
+  background-color: #D3DEDC;
+  display: flex;
+  justify-content: center;
+  font-family: 'Itim', cursive;
+}
+
+.container {
+  background-color: #FBF8F1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 585px;
+  width: 390px;
+}
+
+/* Home Page */
+.homePage {
+  text-align: center;
+}
+
+.homeTitle {
+  color: #54BAB9;
+  font-size: 2.5rem;
+}
+
+.playbtn {
+  background-color: #E9DAC1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px grey;
+  padding: 2% 6%;
+  font-family: 'Itim', cursive;
+  font-size: 1.8rem;
+  transition: transform .2s;
+}
+
+.playbtn:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.playbtn:active {
+  box-shadow: 0 4px darkgrey;
+  transform: translateY(2px);
+}
+
+/* Play Page */
+.playPage {
+  display: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.playTitle {
+  background-color: #E9DAC1;
+  border-radius: 8px;
+  color: black;
+  margin: 3%;
+  padding: 1%;
+  font-size: 2rem;
+}
+
+.lifeAndScoreBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.lifesBox {
+  background-color: #F7ECDE;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 1.5% 0 3%;
+  padding-top: 2%;
+  width: 100%;
+}
+
+.lifesDisplay, .scoreDisplay {
+  margin: 4% 0;
+  width: 100%;
+}
+
+.L1, .L2, .L3 {
+  color: hotpink;
+  margin: 0 1%;
+  font-size: 1rem;
+}
+
+.scale {
+  color: grey;
+}
+
+.scoresBox {
+  background-color: #F7ECDE;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 3% 0 1.5%;
+  padding-top: 2%;
+  width: 100%;
+}
+
+.score {
+  color: #3BACB6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.clickColorAndTimerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}
+
+.clickColorBox {
+  border: 4px solid #54BAB9;
+  margin-right: 1.5%;
+  padding: 8px;
+  width: 100%
+}
+
+.clickColorTitle {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.clickColor {
+  color: violet;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.timerBox {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 1.5%;
+  padding: 2% 4%;
+}
+
+.timer {
+  font-size: 2.5rem;
+}
+
+
+.primary {
+  display: flex;
+  align-items: center;
+  height: 60.3%;
+}
+
+.secondary {
+  width: 100%;
+}
+
+.secondary-1, .secondary-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 6px grey;
+  margin: 2%;
+  height: 100px;
+  transition: transform .2s;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0 4px darkgrey;
+  transform: translateY(2px);
+}
+
+.btn1 {
+  background-color: #776AE3;
+}
+
+.btn2 {
+  background-color: #88E570;
+}
+
+.btn3 {
+  background-color: #3AB0FF;
+}
+
+.btn4 {
+  background-color: #FFB44A;
+}
+
+.popup {
+  background-color: #FBF8F1;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: none;
+  padding: 2%;
+  position: absolute;
+  top: 38%;
+  text-align: center;
+  width: 290px;
+  z-index: 1;
+}
+
+.popupTitle {
+  color: #54BAB9;
+  margin: 2%;
+  font-size: 2.5rem;
+}
+
+.popupSubTitle {
+  color: black;
+  display: block;
+  font-size: 2rem;
+}
+
+.popupScore {
+  color: #E8B870;
+  display: block;
+  margin: 2%;
+  font-size: 1.9rem;
+}
+
+.playAgain {
+  background-color: #E9DAC1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px grey;
+  padding: 2% 6%;
+  font-family: 'Itim', cursive;
+  font-size: 1.5rem;
+  transition: transform .2s;
+}
+
+.playAgain:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.playAgain:active {
+  box-shadow: 0 4px darkgrey;
+  transform: translateY(2px);
+}
