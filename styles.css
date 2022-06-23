@@ -96,6 +96,8 @@ span {
 
 .scale {
   color: grey;
+  transition: transform .2s;
+  transform: scale(1.04);
 }
 
 .scoresBox {

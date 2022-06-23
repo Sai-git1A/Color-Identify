@@ -24,6 +24,10 @@ const colors = ['#776AE3', '#88E570', '#3AB0FF', '#FFB44A'];
 const colorsList = ['Orange', 'Green', 'Purple', 'Blue'];
 let scoreCount = 0;
 
+const ok = new Audio('Ok.mp3');
+const no = new Audio('No.wav');
+const click = new Audio('Click.wav');
+
 btn.addEventListener('click', open);
 playAgain.addEventListener('click', playagain);
 
@@ -36,6 +40,7 @@ for (var i = 0; i < clickBtns.length; i++) {
 }
 
 function open() {
+  click.play();
   setTimeout(() => {
     homePage.style.display = 'none';
     playPage.style.display = 'block';
@@ -75,9 +80,11 @@ function btnClick(color) {
   if (color === clickColor.style.color) {
     scoreCount += 2;
     score.innerHTML = scoreCount;
+    ok.play();
     pickColor();
     return true;
   } else {
+    no.play();
     pickColor();
     const lifes = lifesCount(lifeCount);
     lifeCount = lifes;
@@ -92,6 +99,7 @@ function playagain() {
   scoreCount = 0;
   score.innerHTML = 0;
   lifeCount = 3;
+  click.play();
   setTimeout(() => {
     popup.style.display = 'none';
     playPage.style.display = 'none';
